@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Inmobiliaria_final" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/light_blue</item> <!-- Color primario -->
+        <item name="colorPrimaryDark">@color/black</item> <!-- Color primario oscuro -->
+        <item name="colorAccent">@color/iconos</item> <!-- Color de acento -->
+        <item name="android:colorBackground">@color/fondo_app</item> <!-- Color de fondo -->
+        <item name="android:textColor">@color/black</item> <!-- Color del texto -->
+        <item name="android:buttonStyle">@style/CustomButton</item> <!-- Estilo personalizado para botones -->
+    </style>
+
+    <style name="Theme.Inmobiliaria_final" parent="Base.Theme.Inmobiliaria_final" />
+
+    <style name="Theme.Inmobiliaria_final.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Inmobiliaria_final.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Inmobiliaria_final.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Estilo personalizado para botones -->
+    <style name="CustomButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/square_button</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+</resources>

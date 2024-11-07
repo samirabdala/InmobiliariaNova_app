@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="iconos">#0E2442</color>
+    <color name="gris">#919191</color>
+    <color name="gris_transparente">#80B3B3B3</color> <!-- Gris semitransparente -->
+    <color name="fondo_app">#FFFFFF</color>
+    <color name="jb">#DDDDDD</color>
+    <color name="jc">#F8F8F8</color>
+    <color name="light_blue">#173B6D
+    </color>
+    <color name="super_light_blue">#55A2F5
+    </color>
+    <color name="blueargentina">#76D0FE
+    </color>
+    <color name="blue_cielo">#46C5FF
+    </color> <!-- Color de fondo original (ajústalo según necesites) -->
+</resources>

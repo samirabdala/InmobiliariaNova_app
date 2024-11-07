@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.ulpsoft.inmobiliaria_final.ui.inicio.InicioFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_inicio"/>
+
+    <fragment
+        android:id="@+id/nav_inmueble"
+        android:name="com.ulpsoft.inmobiliaria_final.ui.inmueble.InmuebleFragment"
+        android:label="Inmuebles"
+        tools:layout="@layout/fragment_inmueble">
+        <action
+            android:id="@+id/action_nav_inmueble_to_detalleInmueble"
+            app:destination="@id/detalleInmueble" />
+        <action
+            android:id="@+id/action_nav_inmueble_to_nuevoInmueble"
+            app:destination="@id/nuevoInmueble" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.ulpsoft.inmobiliaria_final.ui.perfil.PerfilFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/action_nav_perfil_to_cambiarPassword"
+            app:destination="@id/cambiarPassword" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detalleInmueble"
+        android:name="com.ulpsoft.inmobiliaria_final.ui.inmueble.DetalleInmueble"
+        android:label="Detalle de inmueble"
+        tools:layout="@layout/fragment_detalle_inmueble" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.ulpsoft.inmobiliaria_final.ui.login.LogoutFragment"
+        android:label="Logout"
+        tools:layout="@layout/fragment_logout">
+        <action
+            android:id="@+id/action_logoutFragment_to_login"
+            app:destination="@id/login" />
+    </fragment>
+
+    <activity
+        android:id="@+id/login"
+        android:name="com.ulpsoft.inmobiliaria_final.ui.login.Login"
+        android:label="Login" />
+
+    <fragment
+        android:id="@+id/nuevoInmueble"
+        android:name="com.ulpsoft.inmobiliaria_final.ui.inmueble.NuevoInmueble"
+        android:label="Nuevo inmueble" />
+
+    <activity
+        android:id="@+id/cambiarPassword"
+        android:name="com.ulpsoft.inmobiliaria_final.ui.password.CambiarPassword"
+        android:label="Cambio de contraseña"
+        tools:layout="@layout/activity_cambiar_password" />
+
+    <fragment
+        android:id="@+id/nav_detallle_inquilino"
+        android:name="com.ulpsoft.inmobiliaria_final.ui.inquilino.DetalleInquilino"
+        android:label="Inquilino"
+        tools:layout="@layout/fragment_detalle_inquilino" />
+
+    <fragment
+        android:id="@+id/nav_inquilino"
+        android:name="com.ulpsoft.inmobiliaria_final.ui.inquilino.InquilinoFragment"
+        android:label="Inquilinos"
+        tools:layout="@layout/fragment_inquilino" >
+
+        <action
+            android:id="@+id/action_nav_inquilino_to_nav_detallle_inquilino2"
+            app:destination="@id/nav_detallle_inquilino" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_contrato"
+        android:name="com.ulpsoft.inmobiliaria_final.ui.contrato.ContratoFragment"
+        android:label="Contratos"
+        tools:layout="@layout/fragment_contrato" >
+        <action
+            android:id="@+id/action_contratoFragment_to_detalleContrato"
+            app:destination="@id/detalleContrato" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalleContrato"
+        android:name="com.ulpsoft.inmobiliaria_final.ui.contrato.DetalleContrato"
+        android:label="Detalle de contrato"
+        tools:layout="@layout/fragment_detalle_contrato" >
+        <action
+            android:id="@+id/action_detalleContrato_to_pagoFragment"
+            app:destination="@id/pagoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pagoFragment"
+        android:name="com.ulpsoft.inmobiliaria_final.ui.pago.PagoFragment"
+        android:label="Pagos"
+        tools:layout="@layout/fragment_pago" />
+</navigation>

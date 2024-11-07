@@ -1,0 +1,186 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp"
+    tools:context=".ui.inquilino.DetalleInquilino"
+    android:id="@+id/detalleInquilino"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="226dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="1.0"
+        tools:src="@drawable/nova_gris" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/btCargarImg"
+        android:layout_width="392dp"
+        android:layout_height="53dp"
+        android:background="@drawable/button_background"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvDireccionEnDetalleInquilino"
+        android:layout_width="392dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="172dp"
+        android:paddingLeft="5dp"
+        android:text="Dirección"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="1.0" />
+
+    <TextView
+        android:id="@+id/tvDireccionEnDetalleInquilino2"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="72dp"
+        android:text="Nombre"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <TextView
+        android:id="@+id/tvNombreDetalle"
+        android:layout_width="220dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="72dp"
+        android:text="nombre"
+        android:textColor="@color/material_dynamic_neutral_variant30"
+        app:layout_constraintStart_toEndOf="@+id/tvDireccionEnDetalleInquilino2"
+        app:layout_constraintTop_toBottomOf="@+id/btCargarImg"
+        app:layout_constraintWidth_percent="0.75" />
+
+    <TextView
+        android:id="@+id/tvEmailDetalle"
+        android:layout_width="220dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="48dp"
+        android:text="email"
+        android:textColor="@color/material_dynamic_neutral_variant30"
+        app:layout_constraintStart_toEndOf="@+id/tvEmail"
+        app:layout_constraintTop_toBottomOf="@+id/tvTelefonoDetalle"
+        app:layout_constraintWidth_percent="0.75" />
+
+    <TextView
+        android:id="@+id/tvTelefonoDetalle"
+        android:layout_width="220dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="48dp"
+        android:text="teléfono"
+        android:textColor="@color/material_dynamic_neutral_variant30"
+        app:layout_constraintStart_toEndOf="@+id/tvObservaciones"
+        app:layout_constraintTop_toBottomOf="@+id/tvDocumentoDetalle"
+        app:layout_constraintWidth_percent="0.75" />
+
+    <TextView
+        android:id="@+id/tvDocumentoDetalle"
+        android:layout_width="220dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="48dp"
+        android:text="documento"
+        android:textColor="@color/material_dynamic_neutral_variant30"
+        app:layout_constraintStart_toEndOf="@+id/tvDocumento"
+        app:layout_constraintTop_toBottomOf="@+id/tvApellidoDetalle"
+        app:layout_constraintWidth_percent="0.75" />
+
+    <TextView
+        android:id="@+id/tvApellidoDetalle"
+        android:layout_width="220dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="48dp"
+        android:text="apellido"
+        android:textColor="@color/material_dynamic_neutral_variant30"
+        app:layout_constraintStart_toEndOf="@+id/tvApellido"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombreDetalle"
+        app:layout_constraintWidth_percent="0.75" />
+
+    <TextView
+        android:id="@+id/tvApellido"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="48dp"
+        android:text="Apellido"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDireccionEnDetalleInquilino2"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <TextView
+        android:id="@+id/tvDocumento"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="48dp"
+        android:text="Documento"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvApellido"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <TextView
+        android:id="@+id/tvObservaciones"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="48dp"
+        android:text="Teléfono"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDocumento"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="48dp"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvObservaciones"
+        app:layout_constraintWidth_percent="0.25" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
