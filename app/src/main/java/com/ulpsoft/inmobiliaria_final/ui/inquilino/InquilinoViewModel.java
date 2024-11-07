@@ -36,6 +36,7 @@ public class InquilinoViewModel extends AndroidViewModel {
     }
 
     public void cargarInquilinos(String token) {
+
         Log.d("InquilinoViewModel", "Cargando inquilinos");
         Call<List<Contrato>> call = api.getListaContrato(token);
         Log.d("InquilinoViewModel", "Llamando a la API");
@@ -50,7 +51,7 @@ public class InquilinoViewModel extends AndroidViewModel {
 
                     inquilinosLiveData.setValue(contratosValidos);
                 } else {
-                    Toast.makeText(context, "Error en la respuesta", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "No hay inquilinos activos", Toast.LENGTH_SHORT).show();
                 }
             }
 

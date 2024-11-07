@@ -52,7 +52,7 @@ public class ContratoViewModel extends AndroidViewModel {
                     List<Contrato> contratosValidos = new ArrayList<>(response.body());
                     contratosLiveData.setValue(contratosValidos);
                 } else {
-                    Toast.makeText(context, "Error en la respuesta", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "No hay contratos activos", Toast.LENGTH_SHORT).show();
                 }
             }
 
